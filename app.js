@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
 
     // res.send('<h1>Hello Express!!!!!</h1>');
-    res.render('index');
+    res.render('index.hbs');
 });
 
 app.listen(process.env.PORT || 3000);
